@@ -236,6 +236,17 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.advantages-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-light-color);
+}
+
 .advantages-title {
   text-transform: uppercase;
   font-weight: 700;
