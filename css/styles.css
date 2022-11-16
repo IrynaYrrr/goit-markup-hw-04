@@ -22,6 +22,8 @@
   --background-light-color: #F5F4FA;
   --button-active-color: #188CE8;
   --line-color: #ECECEC;
+  --hero-bg-color: #C4C4C4;
+  --icon-grey-color: #AFB1B8;
 }
 
 h1,
@@ -156,8 +158,14 @@ body {
 }
 
 .hero {
-  background-color: var(--background-dark-color);
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 200px 0;
+  min-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -283,6 +291,44 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+  margin-bottom: 16px;
+}
+
+.employee-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.employee-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.employee-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.employee-soc-icon {
+  fill: var(--icon-grey-color);
+}
+
+.employee-soc-link:hover,
+.employee-soc-link:focus {
+  background-color: var(--blue-color);
+}
+
+.employee-soc-link:hover .employee-soc-icon {
+  fill: var(--white-text-color);
+}
+
+.employee-soc-link:focus .employee-soc-icon {
+  fill: var(--white-text-color);
 }
 
 
@@ -377,7 +423,10 @@ body {
 
 .select-project-item {
   width: calc((100% - 60px) / 3);
-  /* border-bottom: 1px solid var(--line-color); */
+}
+
+.select-project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-link {
