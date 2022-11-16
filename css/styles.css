@@ -132,6 +132,8 @@ body {
 }
 
 .header-contacts-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -144,8 +146,39 @@ body {
   color: var(--blue-color);
 }
 
+.header-contacts-link:hover .header-phone-icon {
+  fill: var(--blue-color);
+}
+
+.header-contacts-link:focus .header-phone-icon {
+  fill: var(--blue-color);
+}
+
+.header-contacts-link:hover .header-mail-icon {
+  fill: var(--blue-color);
+}
+
+.header-contacts-link:focus .header-mail-icon {
+  fill: var(--blue-color);
+}
+
 .current {
   color: var(--blue-color);
+}
+
+.header-contacts-item {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.header-mail-icon {
+  margin-right: 10px;
+  fill: var(--grey-color);
+}
+
+.header-phone-icon {
+  margin-right: 10px;
+  fill: var(--grey-color);
 }
 
 
